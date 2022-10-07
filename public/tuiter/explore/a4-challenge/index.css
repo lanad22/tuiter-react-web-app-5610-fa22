@@ -16,21 +16,8 @@ a {
 .wd-float-right {
     float: right;
 }
-
-.wd-img-fluid{
-    height: 100%;
-}
-
-.wd-border-light{
-    color: dimgray;
-}
-
 .wd-btn-xlg{
     width: 100%;
-}
-
-.wd-rounded-pill{
-    width: 90%;
 }
 .wd-float-left{
     float:left;
@@ -48,7 +35,6 @@ a {
     border-radius: 5px;
 }
 
-
 .bg-light.override-bs{
     background-color: rgb(47,51,54) !important;
 }
@@ -63,9 +49,7 @@ a {
     border: none;
     font-weight: bold;
 }
-.col-11.override-bs{
-    width: 90%;
-}
+
 .btn-primary.override-bs{
     background-color: white;
     color: black;

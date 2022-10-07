@@ -15,22 +15,10 @@ a {
 .wd-float-right {
     float: right;
 }
-
-.wd-img-fluid{
-    height: 100%;
-}
-
-.wd-border-light{
-    color: gray;
-}
-
 .wd-btn-xlg{
     width: 100%;
 }
 
-.wd-rounded-pill{
-    width: 90%;
-}
 .wd-float-left{
     float:left;
 }
