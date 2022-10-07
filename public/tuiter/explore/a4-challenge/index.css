@@ -44,9 +44,11 @@ a {
     text-underline-offset: 1.1rem;
 
 }
-.nav-item.override-bs{
-    background-color: #ff7070;
+.nav-link.active.override-bs:after {
+    border-radius: 5px;
 }
+
+
 .bg-light.override-bs{
     background-color: rgb(47,51,54) !important;
 }
