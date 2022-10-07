@@ -1,33 +1,10 @@
-/*html {
-    width: 100%;
-    margin: 0;
-}
 
-body {
-    font-family: "Arial";
-    background-color: black;
-    line-height: 1.6;
-    color: white;
-    border: 1px solid rgb(47,51,54);
-    width: 58%;
-    margin-left: 21%;
-    margin-right: 21%;
-}*/
-
-/*hr {
-    width: 100%;
-}*/
-
-/*.wd-search-container {
-    width: calc(100% - 28px);
-    height: fit-content;
-    margin-top: 12px;
-    margin-left: 16px;
-}*/
 a {
     text-decoration: none;
 }
-.fa-stack.small { font-size: 0.5em; }
+.fa-stack.small.override-bs {
+    font-size: 0.5em;
+}
 
 .wd-input {
     border: none;
