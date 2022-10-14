@@ -1,0 +1,16 @@
+.card.override-bs{
+    border: 1px solid rgb(47,51,54);
+    border-radius: 25px;
+    background-color: black;
+}
+.card-img-top.override-bs{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card-body.override-bs{
+    border-top: 1px solid rgb(47,51,54);
+}
+.wd-float-right{
+    float: right;
+}
+
