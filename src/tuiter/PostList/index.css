@@ -1,0 +1,10 @@
+.card.override-bs{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.icon-color{
+    color:#1DA1F2;
+}
+a{
+    text-decoration: none;
+}
