@@ -8,7 +8,7 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group">
-            <a href="#" className="list-group-item">
+            <a href="/#" className="list-group-item">
                 <i className="bi bi-twitter"></i>
             </a>
             <Link to="/tuiter/home" className={`list-group-item
@@ -31,42 +31,42 @@ const NavigationSidebar = () => {
                     <div className="col d-none d-xl-block">Labs</div>
                 </div>
             </Link>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-bell pe-2"></i></div>
                     <div className="col d-none d-xl-block">Notifications</div>
                 </div>
             </a>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-envelope pe-2"></i></div>
                     <div className="col d-none d-xl-block">Messages</div>
                 </div>
             </a>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-bookmark pe-2"></i></div>
                     <div className="col d-none d-xl-block">Bookmarks</div>
                 </div>
             </a>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-card-list pe-2"></i></div>
                     <div className="col d-none d-xl-block">Lists</div>
                 </div>
             </a>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-person pe-2"></i></div>
                     <div className="col d-none d-xl-block">Profile</div>
                 </div>
             </a>
-            <a href="#" className={`list-group-item
+            <a href="/#" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-three-dots pe-2"></i></div>

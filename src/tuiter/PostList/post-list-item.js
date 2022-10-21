@@ -30,7 +30,7 @@ const PostListItem = (
                         {post.caption}
                         <div className={post.link === '' ? "d-none" : "d-inline"}>
                             <i className="bi bi-arrow-right ps-2 pe-2"></i>
-                            <a href="#">{post.link}</a>
+                            <a href="/#">{post.link}</a>
                         </div>
                     </p>
                     <div className="card override-bs">
@@ -76,7 +76,7 @@ const PostListItem = (
                         </div>
                     </div>
                     <div className = "pt-3 pb-2">
-                        <a href="#">{post.moreLink}</a>
+                        <a href="/#">{post.moreLink}</a>
                     </div>
 
                 </div>
