@@ -17,7 +17,7 @@ const PostListItem = (
             </div>
             <div className = "row ps-2">
                 <div className = "col-1 p-0">
-                    <img src={`/images/${post.avatarIcon}`} className="rounded-circle w-100"/>
+                    <img src={`/images/${post.avatarIcon}`} className="rounded-circle w-100" alt="..."/>
                 </div>
                 <div className = "col-11">
                     <span className="fw-bold text-black">{post.userName}</span>
@@ -30,7 +30,7 @@ const PostListItem = (
                         {post.caption}
                         <div className={post.link === '' ? "d-none" : "d-inline"}>
                             <i className="bi bi-arrow-right ps-2 pe-2"></i>
-                            <a href = '#'>{post.link}</a>
+                            <a>{post.link}</a>
                         </div>
                     </p>
                     <div className="card override-bs">
@@ -41,7 +41,7 @@ const PostListItem = (
                             <div className="pt-3 card-title">
                                 <div className = "row">
                                     <div className="col-1 p-0">
-                                        <img src={`/images/${post.avatarIcon2}`} className="rounded-circle w-50 float-end"/>
+                                        <img src={`/images/${post.avatarIcon2}`} className="rounded-circle w-50 float-end" alt="..."/>
                                     </div>
                                     <div className="col-11 ps-1">
                                         <span className="fw-bold text-black">{post.user2}</span>
@@ -76,7 +76,7 @@ const PostListItem = (
                         </div>
                     </div>
                     <div className = "pt-3 pb-2">
-                        <a href="#">{post.moreLink}</a>
+                        <a>{post.moreLink}</a>
                     </div>
 
                 </div>
