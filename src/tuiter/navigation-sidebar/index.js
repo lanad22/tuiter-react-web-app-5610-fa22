@@ -11,15 +11,15 @@ const NavigationSidebar = () => {
             <a href="/#" className="list-group-item">
                 <i className="bi bi-twitter"></i>
             </a>
-            <Link to="/tuiter/home" className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter" className={`list-group-item
+                    ${pathname === '/tuiter'?'active':''}`}>
                 <div className="row">
                     <div className = "col-1"><i className="bi bi-house-door pe-2"></i></div>
                     <div className="col d-none d-xl-block">Home</div>
                 </div>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${pathname === '/tuiter/explore'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-hash pe-2"></i></div>
                     <div className="col d-none d-xl-block">Explore</div>
@@ -59,13 +59,13 @@ const NavigationSidebar = () => {
                     <div className="col d-none d-xl-block">Lists</div>
                 </div>
             </a>
-            <a href="/#" className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+            <Link to = '/tuiter/profile' className={`list-group-item
+                    ${pathname === '/tuiter/profile'?'active':''}`}>
                 <div className = "row">
                     <div className = "col-1"><i className="bi bi-person pe-2"></i></div>
                     <div className="col d-none d-xl-block">Profile</div>
                 </div>
-            </a>
+            </Link>
             <a href="/#" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <div className = "row">

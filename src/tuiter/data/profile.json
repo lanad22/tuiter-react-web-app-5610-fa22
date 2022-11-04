@@ -1,0 +1,11 @@
+[
+  {
+    "id": 123,
+    "name": "Lana Do",	"handle": "@lanad22",
+    "picture": "profile.png", 	"banner": "banner.jpg",
+    "bio": "Aspiring software engineer with extensive experience in Python, Java, C, and Linux programming. Proven understanding of effective software development methods and development processes. Deeply passionate about building revolutionary software products",
+    "website": "www.github.com/lanad22",
+    "location": "San Jose, CA",	"dateOfBirth": "07/09/1996",	"dateJoined": "Nov 2022",
+    "followingCount": "30",	"followersCount": "100", "tweets": "6,114"
+  }
+]
