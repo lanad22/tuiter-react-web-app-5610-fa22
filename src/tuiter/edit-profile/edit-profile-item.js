@@ -5,26 +5,28 @@ import {useSelector} from "react-redux";
 import '../profile/index.css';
 
 const EditProfileItem = () => {
-    let profile =
-        useSelector(state => state.profile[0]);
-    const [name, setname] = useState(profile.name);
+    const profile = useSelector((state) => state.profile);
+    const dispatch = useDispatch();
+
+    const [name, setName] = useState(profile.name);
     const [bio, setBio] = useState(profile.bio);
     const [location, setLocation] = useState(profile.location);
     const [website, setWebsite] = useState(profile.website);
-    const [dateOfBirth, setdateOfBirth] = useState(profile.dateOfBirth);
+    const [dateOfBirth, setDOB] = useState(profile.dateOfBirth);
+
     const [beingEdited, setBeingEdited] = useState(null);
-    const dispatch = useDispatch();
-    const editProfileClickHandler = () => {
+
+    const editProfile = () => {
         dispatch({
-            type: 'edit',
-            name: name,
-            bio: bio,
-            location: location,
-            website: website,
-            dateOfBirth: dateOfBirth
+            type: 'edit-profile',
+            newName: name,
+            newBio: bio,
+            newLocation: location,
+            newWebsite: website,
+            newdateOfBirth: dateOfBirth
         });
     }
-    return (
+    return(
         <>
             <div className = 'row p-2'>
                 <div className = 'float-start col-1'>
@@ -39,7 +41,7 @@ const EditProfileItem = () => {
                     <Link
                         className='btn rounded-pill bg-black float-end text-white fw-bold'
                         to='/tuiter/profile'
-                        onClick={editProfileClickHandler()}
+                        onClick={editProfile}
                     > Save
                     </Link>
                 </div>
@@ -55,9 +57,9 @@ const EditProfileItem = () => {
                     <li className='list-group-item'>
                         <label className='text-secondary'>Name</label>
                         <input
-                               className='form-control border-0 p-0'
-                               defaultValue={profile.name}
-                               onChange={(event) => setname(event.target.value)}/>
+                            className='form-control border-0 p-0'
+                            value={name}
+                            onChange={(event) => setName(event.target.value)}/>
                     </li>
                 </ul>
                 <ul className='list-group pt-4'>
@@ -65,7 +67,7 @@ const EditProfileItem = () => {
                         <label className='text-secondary'>Bio</label>
                         <textarea
                             className='form-control border-0 p-0'
-                            defaultValue={profile.bio}
+                            value={bio}
                             onChange={(event) => setBio(event.target.value)}>
                         </textarea>
                     </li>
@@ -75,7 +77,7 @@ const EditProfileItem = () => {
                         <label className='text-secondary'>Location</label>
                         <input
                             className='form-control border-0 p-0'
-                            defaultValue={profile.location}
+                            value={location}
                             onChange={(event) => setLocation(event.target.value)}/>
                     </li>
                 </ul>
@@ -87,42 +89,41 @@ const EditProfileItem = () => {
                             onChange={(event) => setWebsite(event.target.value)}/>
                     </li>
                 </ul>
-
                 <li className='list-group-item pt-4 pb-4'>
                     <label className='pe-2 text-secondary'>Birth date . </label>
                     {
-                        profile.dateOfBirth !== beingEdited &&
+                        dateOfBirth !== beingEdited &&
                         <button
-                            onClick={() => setBeingEdited(profile.dateOfBirth)}>
+                            onClick={() => setBeingEdited(dateOfBirth)}>
                             <span style={{color:'blue'}}>Edit</span>
                         </button>
                     }
                     {
-                        profile.dateOfBirth === beingEdited &&
+                        dateOfBirth === beingEdited &&
                         <button
                             onClick={() => setBeingEdited(null)}>
                             Done
                         </button>
                     }
                     {
-                        profile.dateOfBirth !== beingEdited &&
-                        <div>{profile.dateOfBirth}</div>
+                        dateOfBirth !== beingEdited &&
+                        <div>{dateOfBirth}</div>
                     }
 
                     {
-                        profile.dateOfBirth === beingEdited &&
-                            <div>
-                                <input
-                                    type = 'date'
-                                    className='form p-2'
-                                    value = {profile.dateOfBirth}
-
-                                    onChange={(event) => setdateOfBirth(event.target.value)}/>
-                            </div>
+                        dateOfBirth === beingEdited &&
+                        <div>
+                            <input
+                                type='date'
+                                className='form p-2'
+                                value = {dateOfBirth}
+                                onChange={(event) => setDOB(event.target.value)}/>
+                        </div>
                     }
                 </li>
             </div>
         </>
-    );
+);
 };
+
 export default EditProfileItem;

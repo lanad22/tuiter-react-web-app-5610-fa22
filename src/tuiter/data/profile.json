@@ -1,5 +1,4 @@
-[
-  {
+ {
     "id": 123,
     "name": "Lana Do",	"handle": "@lanad22",
     "picture": "profile.png", 	"banner": "banner.jpg",
@@ -8,4 +7,3 @@
     "location": "San Jose, CA",	"dateOfBirth": "07/09/1996",	"dateJoined": "Nov 2022",
     "followingCount": "30",	"followersCount": "100", "tweets": "6,114"
   }
-]

@@ -1,19 +1,20 @@
 import profile from "../data/profile.json";
 
-const profileReducer = (state = profile, action) => {
+const profileReducers = (state = profile, action) => {
     switch (action.type) {
-        case 'edit':
-            state[0].name = action.name;
-            state[0].bio = action.bio;
-            state[0].location = action.location;
-            state[0].website = action.website;
-            state[0].dateOfBirth = action.dateOfBirth;
-            return state;
+        case 'edit-profile':
+            return {
+                _id: (new Date()).getTime() + '',
+                ...state,
+                name: action.newName,
+                bio: action.newBio,
+                location: action.newLocation,
+                website: action.newWebsite,
+                dateOfBirth: action.newdateOfBirth,
+            }
 
         default:
             return state;
     }
-}
-
-
-export default profileReducer;
+};
+export default profileReducers;
