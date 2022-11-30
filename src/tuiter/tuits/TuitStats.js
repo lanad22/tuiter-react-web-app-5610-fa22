@@ -24,8 +24,12 @@ const TuitStats = ({tuits}) => {
                             }
                         ))
                     }}
-                       className = "bi bi-heart-fill me-2 text-danger"
                     >
+                        <i
+                            className={`${
+                                tuits.likes ? " text-danger " : "text-secondary "
+                            }bi bi-heart-fill`}
+                        ></i>
                     </i>{tuits.likes}
                 </div>
             </div>
